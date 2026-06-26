@@ -1,17 +1,41 @@
 function Header() {
   return (
-    <header className="hero">
+    <header className="hero" id="inicio">
+
+      <nav className="navbar">
+
+        <h2 className="logo">☕ Seoul Café & Books</h2>
+
+        <div className="menu">
+          <a href="#inicio">Inicio</a>
+          <a href="#nosotros">Sobre Nosotros</a>
+          <a href="#galeria">Galería</a>
+          <a href="#libros">Libros Recomendados</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+      </nav>
+
       <div className="hero-content">
+
+        <span className="hero-subtitle">
+          Bienvenido a nuestra cafetería
+        </span>
+
         <h1>☕ Seoul Café & Books</h1>
+
         <p>
-          Un rincón de Corea en Ecuador donde el café,
-          los libros y la cultura se encuentran.
+          Vive una experiencia inspirada en Corea del Sur,
+          donde el aroma del café, los libros y la cultura
+          crean momentos inolvidables.
         </p>
 
-        <button className="btn">
-          Explorar Menú
-        </button>
+        <a href="#libros" className="btn">
+          ☕ Explorar Café y Libros
+        </a>
+
       </div>
+
     </header>
   );
 }

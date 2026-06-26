@@ -1,17 +1,10 @@
-function About() {
-  return (
-    <section className="card">
-      <h2> Sobre Nosotros</h2>
+<p>
 
-      <p>
-        Seoul Café & Books es una cafetería inspirada en la cultura
-        coreana ubicada en Ecuador. Nuestro objetivo es ofrecer una
-        experiencia única donde los visitantes puedan disfrutar de
-        café de calidad, postres coreanos y una biblioteca con libros,
-        mangas y novelas.
-      </p>
-    </section>
-  );
-}
+Seoul Café & Books nace con la idea de unir la calidez
+de una cafetería de especialidad con el encanto de las
+bibliotecas coreanas. Nuestro espacio invita a disfrutar
+de café artesanal, postres tradicionales, libros,
+mangas y un ambiente perfecto para estudiar,
+leer o compartir con amigos.
 
-export default About;
+</p>
