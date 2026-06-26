@@ -1,0 +1,407 @@
+
+ /*  SEOUL CAFÉ & BOOKS
+   Estilo inspirado en cafeterías coreanas
+    */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#F7F4EF;
+    color:#3F3A37;
+    line-height:1.6;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#FFFDFB;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#7B5E57;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links li{
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links li:hover{
+    color:#C8A27A;
+}
+.nav-links a{
+    text-decoration:none;
+    color:#3F3A37;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#C8A27A;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+
+    padding:20px;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:25px;
+    color:white;
+    text-shadow:3px 3px 10px rgba(0,0,0,.8);
+}
+
+
+.hero p{
+    
+    font-size:1.3rem;
+    margin-bottom:30px;
+    color:white;
+    text-shadow:2px 2px 8px rgba(0,0,0,.8);
+
+}
+
+.hero button,
+.btn{
+    background:#C8A27A;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero button:hover,
+.btn:hover{
+    background:#8B6B4A;
+}
+
+/* ---------- TARJETAS ---------- */
+
+    .card{
+    width:95%;
+    max-width:1200px;
+    margin:80px auto;
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h2{
+    text-align:center;
+    font-size:2.5rem;
+    color:#7B5E57;
+    margin-bottom:40px;
+}
+.card p{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.card ul{
+    list-style:none;
+    text-align:center;
+    padding:0;
+}
+
+.card li{
+    margin:10px 0;
+}
+
+/* ---------- MENÚ ---------- */
+
+.menu{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.menu h2{
+    color:#7B5E57;
+    margin-bottom:50px;
+    font-size:2.6rem;
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.product-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.product-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.product-card h3{
+
+    margin-top:20px;
+
+    color:#5D4635;
+
+    font-size:24px;
+
+}
+
+.product-card p{
+
+    margin:20px;
+
+    color:#C8A27A;
+
+    font-weight:bold;
+
+    font-size:20px;
+
+}
+
+/* ---------- GALERÍA ---------- */
+
+
+   .gallery{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:30px;
+}
+
+
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ---------- FORMULARIO ---------- */
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:15px;
+
+    font-size:16px;
+
+}
+
+.contact-form button{
+
+    background:#7B5E57;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+}
+
+.contact-form button:hover{
+
+    background:#C8A27A;
+
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer{
+
+    background:#5D4635;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+    margin-top:80px;
+
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+
+padding:20px;
+
+}
+
+.nav-links{
+
+margin-top:15px;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:2.7rem;
+
+}
+
+.hero p{
+
+font-size:1rem;
+
+}
+
+.card{
+
+padding:30px;
+
+}
+
+}
+/* ---------- BIBLIOTECA ---------- */
+
+.library-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.library-content img{
+    width:420px;
+    max-width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.library-text{
+    max-width:500px;
+}
+
+.library-text p{
+    text-align:left;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+.library-list{
+    list-style:none;
+    padding:0;
+}
+
+.library-list li{
+    margin:12px 0;
+    font-size:18px;
+}
